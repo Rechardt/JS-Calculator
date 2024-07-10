@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator</title>
+  <link href="index.css" rel="stylesheet">
+  <script src="calculator.js" defer></script>
+</head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="customisation-grid">
+                <input type="color">
+                <button data-button-color>BUTTONS</button>
+            </div>
+        </div>
+
+        <!-- Use any element to open the sidenav -->
+        <button onclick="openNav()">Customise Calculator</button>
+        
+        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+        <div id="main">
+        </div>
+        <div class="calculator-grid">
+            <div class="output">
+                <div data-previous-operand class="previous-operand"></div>
+                <div data-current-operand class="current-operand"></div>
+            </div>
+            <button data-all-clear class="span-two">AC</button>
+            <button data-delete>DEL</button>
+            <button data-operation>÷</button>
+            <button data-number>1</button>
+            <button data-number>2</button>
+            <button data-number>3</button>
+            <button data-operation>*</button>
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>6</button>
+            <button data-operation>+</button>
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button data-operation>-</button>
+            <button data-number>.</button>
+            <button data-number>0</button>
+            <button data-equals class="span-two">=</button>
+        </div>
+    </body>
+</html>
